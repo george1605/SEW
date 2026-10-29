@@ -1,0 +1,130 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Corduneanu Alin George */
+/*  Correo electrónico (uniovi):   uo324905@uniovi.es  */
+/*  Grupo de laboratorio:                */
+/* ***************************************/
+
+
+/* Gama cromática
+Color principal: #684B41
+  - Contraste de 7.04:1 con color secundario (AAA)[cite: 22]
+  - Contraste de 7.86:1 con color blanco (AAA)[cite: 22]
+Color secundario: #F9F0F5
+  - Contraste de 7.04:1 con color principal (AAA)[cite: 22]
+  - Contraste de 12.16:1 con color negro (AAA)[cite: 22]
+Color blanco: #FFFFFF[cite: 22]
+Color negro: #000000[cite: 22]
+*/
+
+/* Especificidad: 1 */
+:root {
+    --color-principal: #684B41;
+    --color-secundario: #F9F0F5;
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+    --color-select: #F6FF4D;
+}
+
+/* Especificidad: 1 */
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    margin: 0;
+    padding: 0;
+}
+
+/* Especificidad: 1 */
+header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Especificidad: 2 */
+header h1 {
+    color: var(--color-blanco);
+}
+
+/* Especificidad: 2 */
+header nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Especificidad: 2 */
+header nav a:hover {
+    color: var(--color-secundario);
+}
+
+/* Especificidad: 1 */
+main {
+    padding: 20px;
+}
+
+/* Especificidad: 1 */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Especificidad: 2 */
+footer address a {
+    color: var(--color-blanco);
+}
+
+/* Especificidad: 1 */
+h2, h3 {
+    color: var(--color-principal);
+}
+
+footer a, header a {
+    color: var(--color-blanco);
+    text-decoration-line: none;
+}
+
+a[aria-current=page] {
+    color: var(--color-select);
+}
+
+nav > ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ol > li {
+    display: inline;
+}
+
+nav > ol > li + li::before {
+    content: " >> ";
+    display: inline-block;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section ul li:nth-child(3) {
+    font-size: 1.2em;
+}
+
+section ul li:nth-child(4) {
+    font-weight: bold;
+}

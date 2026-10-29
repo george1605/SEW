@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemark>
+      <name>Punto 1</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-5.2806,37.6950,55</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto 2</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-4.7833,37.8833,106</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto 3</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-5.0500,37.7600,497</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto 4</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-4.9200,37.8200,523</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto 5</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-5.2806,37.6950,55</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto 6</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-5.0000,37.7800,310</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto 7</name>
+      <description>Placemark</description>
+      <Point>
+        <coordinates>-4.8500,37.8400,215</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Route</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>-5.2806,37.6950,55 -4.7833,37.8833,106 -5.0500,37.7600,497 -4.9200,37.8200,523 -5.2806,37.6950,55 -5.0000,37.7800,310 -4.8500,37.8400,215</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>5</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,42 @@
+<!ELEMENT etapa (nombre, numero?, longitud, fecha, tiempo, velocidad, desnivel, ciudades, coordenadas*, hitos, puntos-anonimos?, tipo, referencias, calificados-etapa, calificados-general, calificados-equipos, videos, fotografias, podcasts)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT velocidad (#PCDATA)>
+<!ATTLIST velocidad unidad CDATA #REQUIRED>
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED>
+<!ELEMENT ciudades (empezar, terminar)>
+<!ELEMENT empezar (#PCDATA)>
+<!ELEMENT terminar (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud unidad CDATA #REQUIRED>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidad CDATA #REQUIRED>
+<!ELEMENT latitud (#PCDATA)>
+<!ATTLIST latitud unidad CDATA #REQUIRED>
+<!ELEMENT coordenadas (longitud, latitud, altitud, distancia?)>
+<!ELEMENT hitos (coordenadas*)>
+<!ELEMENT puntos-anonimos (punto-anonimo+)>
+<!ELEMENT punto-anonimo (coordenadas)>
+<!ATTLIST punto-anonimo nombre CDATA #IMPLIED>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT referencias (referencia*)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT calificados-etapa (calificado+)>
+<!ELEMENT calificados-general (calificado+)>
+<!ELEMENT calificados-equipos (calificado+)>
+<!ELEMENT calificado (#PCDATA)>
+<!ELEMENT puntos (#PCDATA)>
+<!ELEMENT videos (video, video?, video?)>
+<!ELEMENT video (#PCDATA)>
+<!ATTLIST video loc CDATA #REQUIRED>
+<!ELEMENT fotografias (fotografia, fotografia?, fotografia?, fotografia?, fotografia?)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ATTLIST fotografia loc CDATA #REQUIRED>
+<!ELEMENT podcasts (podcast, podcast?)>
+<!ELEMENT podcast (#PCDATA)>
+<!ATTLIST podcast loc CDATA #REQUIRED>

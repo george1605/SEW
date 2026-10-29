@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapa SYSTEM "etapa.dtd">
+
+<etapa>
+    <nombre>PALMA DEL RÍO - CÓRDOBA</nombre>
+    <numero>15</numero>
+    <longitud unidad="km">189.7</longitud>
+    <fecha>2026-09-06</fecha>
+    <tiempo>4h 30m 15s</tiempo>
+    <velocidad unidad="km/h">42.1</velocidad>
+    <desnivel unidad="m">3525</desnivel>
+    <ciudades>
+        <empezar>PALMA DEL RÍO</empezar>
+        <terminar>CÓRDOBA</terminar>
+    </ciudades>
+    <coordenadas>
+        <longitud unidad="deg">37.6950</longitud>
+        <latitud  unidad="deg">-5.2806</latitud>
+        <altitud  unidad="m">55</altitud>
+    </coordenadas>
+    <coordenadas>
+        <longitud unidad="deg">37.8833</longitud>
+        <latitud  unidad="deg">-4.7833</latitud>
+        <altitud  unidad="m">106</altitud>
+    </coordenadas>
+    <hitos>
+        <coordenadas>
+            <longitud unidad="deg">37.7600</longitud>
+            <latitud unidad="deg">-5.0500</latitud>
+            <altitud unidad="m">497</altitud>
+            <distancia unidad="km">34.5</distancia>
+        </coordenadas>
+        <coordenadas>
+            <longitud unidad="deg">37.8200</longitud>
+            <latitud unidad="deg">-4.9200</latitud>
+            <altitud unidad="m">523</altitud>
+            <distancia unidad="km">73.6</distancia>
+        </coordenadas>
+    </hitos>
+    <puntos-anonimos>
+        <punto-anonimo nombre="Control de Firmas">
+            <coordenadas>
+                <longitud unidad="deg">37.6950</longitud>
+                <latitud unidad="deg">-5.2806</latitud>
+                <altitud unidad="m">55</altitud>
+                <distancia unidad="km">0.0</distancia>
+            </coordenadas>
+        </punto-anonimo>
+        <punto-anonimo>
+            <coordenadas>
+                <longitud unidad="deg">37.7800</longitud>
+                <latitud unidad="deg">-5.0000</latitud>
+                <altitud unidad="m">310</altitud>
+                <distancia unidad="km">45.2</distancia>
+            </coordenadas>
+        </punto-anonimo>
+        <punto-anonimo nombre="Avituallamiento">
+            <coordenadas>
+                <longitud unidad="deg">37.8400</longitud>
+                <latitud unidad="deg">-4.8500</latitud>
+                <altitud unidad="m">215</altitud>
+                <distancia unidad="km">90.1</distancia>
+            </coordenadas>
+        </punto-anonimo>
+    </puntos-anonimos>
+    <tipo>media montaña</tipo>
+    <referencias>
+        <referencia>https://www.lavuelta.es/es/etapa-15</referencia>
+        <referencia>https://www.campusvirtual.uniovi.es/pluginfile.php/629035/mod_folder/content/0/libro-de-ruta-interactivo-lv26.pdf</referencia>
+        <referencia>https://www.rtve.es/deportes/20260905/vuelta-espana-2026-etapa-15-perfil-recorrido-hora-donde-ver-claves/17174862.shtml</referencia>
+    </referencias>
+    <calificados-etapa>
+        <calificado>Wout van Aert</calificado>
+        <calificado>Alessandro Romele</calificado>
+        <calificado>Thibau Nys</calificado>
+    </calificados-etapa>
+    <calificados-general>
+        <calificado>Enric Mas</calificado>
+        <calificado>Felix Gall</calificado>
+        <calificado>Primož Roglič</calificado>
+    </calificados-general>
+    <calificados-equipos>
+        <calificado>Decathlon CMA CGM Team</calificado>
+        <calificado>XDS Astana Team</calificado>
+        <calificado>Bahrain Victorious</calificado>
+    </calificados-equipos>
+    <videos>
+        <video loc="multimedia\videoplayback.mp4"></video>
+    </videos>
+    <fotografias>
+        <fotografia loc="multimedia\21dbb.jpg"></fotografia>
+        <fotografia loc="multimedia\bd658.jpg"></fotografia>
+        <fotografia loc="multimedia\dfabf.jpg"></fotografia>
+    </fotografias>
+    <podcasts>
+        <podcast loc="multimedia\lavuelta.mp3"></podcast>
+    </podcasts>
+</etapa>

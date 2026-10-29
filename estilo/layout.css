@@ -1,0 +1,195 @@
+/***************************************/
+/*          LaVuelta2026               */
+/*          Estilos layout             */
+/***************************************/
+/*    DATOS ESTUDIANTE                 */
+----------------------------------------*/
+/*  Nombre y Apellidos: Corduneanu Alin George */
+/*  Correo electrónico (uniovi):    uo324905@uniovi.es  */
+/*  Grupo de laboratorio:                  */
+/***************************************/
+
+
+/* ================================================= */
+/* EJERCICIO 6: Posicionamiento general del proyecto */
+/* ================================================= */
+
+/* Especificidad: 001 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* Especificidad: 001 */
+header {
+    grid-area: cabecera;
+}
+
+/* Especificidad: 002 */
+header + nav {
+    grid-area: migas;
+}
+
+/* Especificidad: 001 */
+main {
+    grid-area: contenido;
+}
+
+/* Especificidad: 001 */
+footer {
+    grid-area: pie;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 7: Distribución cabecera y pie con Flexbox  */
+/* ===================================================== */
+
+/* Especificidad: 001 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Especificidad: 001 */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 3: Distribución info personal del ciclista  */
+/* ===================================================== */
+
+/* Especificidad: 002 */
+section:has(ul) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Especificidad: 003 */
+section:has(ul) > ul {
+    order: 1;
+    list-style: none;
+}
+
+/* Especificidad: 003 */
+section:has(ul) > picture {
+    order: 0;
+}
+
+/* Especificidad: 003 */
+section:has(ul) > h3 {
+    flex-basis: 100%;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 4: Distribución del apartado Multimedia     */
+/* ===================================================== */
+
+/* Especificidad: 002 */
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Especificidad: 003 */
+section:has(video) > video {
+    order: 0;
+}
+
+/* Especificidad: 003 */
+section:has(video) > audio {
+    order: 1;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 5: Distribución de la alineación (Grid)     */
+/* ===================================================== */
+
+/* Especificidad: 002 */
+section:has(article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Especificidad: 003 */
+section:has(article) > h3 {
+    grid-column: 1 / -1;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 9: Adaptabilidad general (Media Queries)   */
+/* ===================================================== */
+
+@media screen and (max-width: 1024px) {
+    /* Especificidad: 002 */
+    section:has(article) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Especificidad: 001 */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Especificidad: 002 */
+    header > nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    /* Especificidad: 002 */
+    header + nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Especificidad: 002 */
+    section:has(article) {
+        grid-template-columns: 1fr;
+    }
+
+    /* Especificidad: 001 */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Especificidad: 002 */
+    header > nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Especificidad: 002 */
+    header + nav {
+        display: none;
+    }
+}

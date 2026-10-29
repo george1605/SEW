@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>LaVuelta2026: Juegos</title>
+
+    <meta name="author" content="Corduneanu Alin George">
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="icon" type="image/png" href="multimedia/favicon.png" />
+</head>
+
+<body>
+    <!-- contenido de juegos.html  -->
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Página principal">Inicio</a>
+            <a href="ciclista.html" title="Información sobre los ciclistas">Ciclista</a>
+            <a href="equipo.html" title="Detalles de los equipos">Equipo</a>
+            <a href="etapa.html" title="Información sobre las etapas">Etapa</a>
+            <a href="meteorologia.html" title="Condiciones meteorológicas">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones generales">Clasificaciones</a>
+            <a href="juegos.html" title="Juegos interactivos" aria-current="page">Juegos</a>
+            <a href="ayuda.html" title="Sección de ayuda">Ayuda</a>
+        </nav>
+    </header>
+    <nav aria-label=”migas”>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li> Juegos </li>
+        </ol>
+    </nav>
+    <main>
+        <h2>Juegos</h2>
+        <h3>¿Conoces la etapa?</h3>
+        <p>
+            Este juego consiste en responder 10 preguntas sobre la información de las etapas.
+            Pon a prueba tus conocimientos y demuestra cuánto sabes sobre La Vuelta 2026.
+        </p>
+        <form>
+            <fieldset>
+                <legend>Etapa Palma del Río > Córdoba</legend>
+                <p>
+                    <label for="pregunta1">¿Conoces la etapa?</label>
+                    <input type="number" name="pregunta1" min="1" max="21" id="pregunta1"
+                        placeholder="Escribe tu respuesta aquí" required>
+                </p>
+
+                <p>
+                    <label for="pregunta2">¿Cuándo se celebra la etapa?</label>
+                    <input type="date" value="Seleccionar fecha" id="pregunta2" name="pregunta2" min="2026-08-21"
+                        max="2026-9-14" required>
+                </p>
+
+                <p>
+                    <label for="pregunta3">¿Cuál es la ciudad de salida?</label>
+                    <select id="pregunta3" name="pregunta3" required>
+                        <option value="seleccionar" disabled>Seleccione una opción</option>
+                        <option value="palma del rio">Palma del Río</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="granada">Granada</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pregunta4">¿Cuál es la ciudad de llegada?</label>
+                    <select id="pregunta4" name="pregunta4" required>
+                        <option value="seleccionar" disabled>Seleccione una opción</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="granada">Granada</option>
+                        <option value="madrid">Madrid</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pregunta5">¿Qué tipo de etapa es esta?</label>
+                <fieldset>
+                    <p>
+                        <input type="radio" name="pregunta5" value="llana" id="llana" required />
+                        <label for="llana">Llana</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="pregunta5" value="montaña" id="montaña" required />
+                        <label for="montaña">Montaña</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="pregunta5" value="media montaña" id="media-montaña" required />
+                        <label for="media-montaña">Media Montaña</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="pregunta5" value="contrarreloj individual"
+                            id="contrarreloj-individual" required />
+                        <label for="contrarreloj-individual">Contrarreloj Individual</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="pregunta5" value="contrarreloj por equipos" id="contrarreloj-equipos"
+                            required />
+                        <label for="contrarreloj-equipos">Contrarreloj por Equipos</label>
+                    </p>
+                </fieldset>
+                </p>
+                <p>
+                    <label>
+                        ¿La etapa tiene algún hito especial?
+                    </label>
+                </p>
+                <fieldset>
+                    <p>
+                    <p>
+                        <input type="checkbox" name="puerto de montaña" id="puerto-de-montaña" />
+                        <label for="puerto-de-montaña">Puerto de montaña</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="puerto categoría especial" id="puerto-categoria-especial" />
+                        <label for="puerto-categoria-especial">Puerto categoría especial</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="sprint intermedio" id="sprint-intermedio" />
+                        <label for="sprint-intermedio">Sprint intermedio</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="sprint bonificado" id="sprint-bonificado" />
+                        <label for="sprint-bonificado">Sprint bonificado</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="sin hitos" id="sin-hitos" />
+                        <label for="sin-hitos">Sin hitos</label>
+                    </p>
+                    </p>
+                </fieldset>
+                <p>
+                    <label for="pregunta6">Cual es la dificultad de la etapa (1-10)?</label>
+                    <input type="range" min="1" max="10" value="2" id="pregunta6" name="dificultad" />
+                </p>
+                <p>
+                    <label for="pregunta7">Cual es la longitud de la etapa (km)?</label>
+                    <input type="number" min="20" max="200" id="pregunta7" name="longitud">
+                </p>
+                <p>
+                    <label for="pregunta8">Cual es el desnivel de la etapa (m)?</label>
+                    <input type="number" min="-100" max="600" id="pregunta8" name="desnivel">
+                </p>
+                <p>
+                    <label for="pregunta9">Describe la etapa:</label>
+                    <textarea id="pregunta9" name="descripción" rows="5" cols="30"></textarea>
+                </p>
+                <p>
+                    <label for="pregunta10">Escribe tu nombre:</label>
+                    <input type="text" name="pregunta10" id="nombre" placeholder="Escribe tu nombre aquí" required />
+                </p>
+                <button type="submit" value="Enviar respuestas" />
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Corduneanu Alin-George</p>
+        <address>
+            <a href="mailto:UO324905@uniovi.es">Correo Electrónico</a>
+        </address>
+    </footer>
+</body>
+
+</html>

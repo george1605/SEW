@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Ciclista</title>
+
+    <meta name="author" content="Corduneanu Alin George" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" type="image/png" href="multimedia/favicon.png" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Página principal">Inicio</a>
+            <a href="ciclista.html" title="Información sobre los ciclistas" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Detalles de los equipos">Equipo</a>
+            <a href="etapa.html" title="Información sobre las etapas">Etapa</a>
+            <a href="meteorologia.html" title="Condiciones meteorológicas">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones generales">Clasificaciones</a>
+            <a href="juegos.html" title="Juegos interactivos">Juegos</a>
+            <a href="ayuda.html" title="Sección de ayuda">Ayuda</a>
+        </nav>
+    </header>
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li> Ciclista </li>
+        </ol>
+    </nav>
+    <main>
+        <h2>Ciclista - Yevgeniy Fedorov</h2>
+        <section id="datos-personales">
+            <h3>Datos personales</h3>
+            <ul>
+                <li>Yevgeniy Fedorov</li>
+                <li>16/02/2000</li>
+                <li>Kazakhstan</li>
+                <li>XDS ASTANA TEAM/kaz</li>
+                <li>182</li>
+            </ul>
+            <picture>
+                <source srcset="multimedia/yevgeniy.png" media="(max-width: 768px)" width="300" height="455" />
+                <source srcset="multimedia/yevgeniy-2.png" media="(max-width: 1024px)" width="300" height="455" />
+                <img src="multimedia/yevgeniy-3.png" alt="Foto de Yevgeniy Fedorov" width="300" height="455" />
+            </picture>
+        </section>
+        <section>
+            <h3>Datos equipos</h3>
+            <ol>
+                <li>XDS Astana Team (2025- 2026)</li>
+                <li>Astana Qazaqstan Team (2022 - 2024)</li>
+                <li>Astana - Premier Tech (2021)</li>
+                <li>Vino - Astana Motors (2019 - 2020)</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <tr>
+                    <th id="th-concepto" scope="col">Nombre del Datos</th>
+                    <th id="th-resultado" scope="col">Resultado</th>
+                </tr>
+                <tr>
+                    <td headers="th-concepto">Carreras disputadas</td>
+                    <td headers="th-resultado">65</td>
+                </tr>
+                <tr>
+                    <td headers="th-concepto">Victorias de etapa</td>
+                    <td headers="th-resultado">3</td>
+                </tr>
+                <tr>
+                    <td headers="th-concepto">Victorias de clasificación general</td>
+                    <td headers="th-resultado">1</td>
+                </tr>
+                <tr>
+                    <td headers="th-concepto">Podios conseguidos</td>
+                    <td headers="th-resultado">8</td>
+                </tr>
+                <tr>
+                    <td headers="th-concepto">Maillots de montaña</td>
+                    <td headers="th-resultado">2</td>
+                </tr>
+                <tr>
+                    <td headers="th-concepto">Maillots de regularidad</td>
+                    <td headers="th-resultado">1</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Multimedia</h3>
+            <p>
+                <a href="https://www.lavuelta.es/en/team/XAT/xds-astana-team">Equipo XDS ASTANA TEAM/kaz en la Vuelta
+                    Ciclista a España 2026.</a>
+            </p>
+            <video controls poster="multimedia/cover.png">
+                <source src="multimedia/presentation.webm" type="video/webm" />
+                <source src="multimedia/presentation.mp4" type="video/mp4" />
+                Tu navegador no soporta el elemento de vídeo.
+            </video>
+            <audio controls>
+                <source src="multimedia/lavuelta.mp3" type="audio/mp3" />
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>Corduneanu Alin-George</p>
+        <address>
+            <a href="mailto:UO324905@uniovi.es">Correo Electrónico</a>
+        </address>
+    </footer>
+</body>
+</html>
