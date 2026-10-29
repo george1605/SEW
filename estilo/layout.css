@@ -192,4 +192,27 @@ section:has(article) > h3 {
     header + nav {
         display: none;
     }
+
+    main {
+        padding: 10px;
+    }
+
+    /* Apilar los enlaces de navegación del header verticalmente para facilitar la interacción táctil */
+    header nav {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* Asegurar que cada enlace de navegación ocupe todo el ancho disponible para un área táctil cómoda */
+    header nav a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    /* Ajustar tablas para pantallas pequeñas si es necesario */
+    table, th, td {
+        font-size: 0.9rem;
+    }
 }
