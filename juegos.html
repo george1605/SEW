@@ -15,7 +15,7 @@
     <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
     <link rel="stylesheet" type="text/css" href="estilo/layout.css">
-    <link rel="icon" type="image/png" href="multimedia/favicon.png" />
+    <link rel="icon" type="image/png" href="multimedia/favicon.png">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             <a href="ayuda.html" title="Sección de ayuda">Ayuda</a>
         </nav>
     </header>
-    <nav aria-label=”migas”>
+    <nav aria-label="migas">
         <ol>
             <li><a href="index.html">Inicio</a></li>
             <li> Juegos </li>
@@ -57,14 +57,14 @@
 
                 <p>
                     <label for="pregunta2">¿Cuándo se celebra la etapa?</label>
-                    <input type="date" value="Seleccionar fecha" id="pregunta2" name="pregunta2" min="2026-08-21"
-                        max="2026-9-14" required>
+                    <input type="date" id="pregunta2" name="pregunta2" min="2026-08-21"
+                        max="2026-09-14" required>
                 </p>
 
                 <p>
                     <label for="pregunta3">¿Cuál es la ciudad de salida?</label>
                     <select id="pregunta3" name="pregunta3" required>
-                        <option value="seleccionar" disabled>Seleccione una opción</option>
+                        <option value="" disabled selected>Seleccione una opción</option>
                         <option value="palma del rio">Palma del Río</option>
                         <option value="cordoba">Córdoba</option>
                         <option value="sevilla">Sevilla</option>
@@ -75,7 +75,7 @@
                 <p>
                     <label for="pregunta4">¿Cuál es la ciudad de llegada?</label>
                     <select id="pregunta4" name="pregunta4" required>
-                        <option value="seleccionar" disabled>Seleccione una opción</option>
+                        <option value="" disabled selected>Seleccione una opción</option>
                         <option value="valencia">Valencia</option>
                         <option value="cordoba">Córdoba</option>
                         <option value="sevilla">Sevilla</option>
@@ -84,69 +84,63 @@
                     </select>
                 </p>
 
-                <p>
-                    <label for="pregunta5">¿Qué tipo de etapa es esta?</label>
                 <fieldset>
+                    <legend>¿Qué tipo de etapa es esta?</legend>
                     <p>
-                        <input type="radio" name="pregunta5" value="llana" id="llana" required />
+                        <input type="radio" name="pregunta5" value="llana" id="llana" required>
                         <label for="llana">Llana</label>
                     </p>
                     <p>
-                        <input type="radio" name="pregunta5" value="montaña" id="montaña" required />
+                        <input type="radio" name="pregunta5" value="montaña" id="montaña" required>
                         <label for="montaña">Montaña</label>
                     </p>
                     <p>
-                        <input type="radio" name="pregunta5" value="media montaña" id="media-montaña" required />
+                        <input type="radio" name="pregunta5" value="media montaña" id="media-montaña" required>
                         <label for="media-montaña">Media Montaña</label>
                     </p>
                     <p>
                         <input type="radio" name="pregunta5" value="contrarreloj individual"
-                            id="contrarreloj-individual" required />
+                            id="contrarreloj-individual" required>
                         <label for="contrarreloj-individual">Contrarreloj Individual</label>
                     </p>
                     <p>
                         <input type="radio" name="pregunta5" value="contrarreloj por equipos" id="contrarreloj-equipos"
-                            required />
+                            required>
                         <label for="contrarreloj-equipos">Contrarreloj por Equipos</label>
                     </p>
                 </fieldset>
-                </p>
-                <p>
-                    <label>
-                        ¿La etapa tiene algún hito especial?
-                    </label>
-                </p>
+
                 <fieldset>
+                    <legend>¿La etapa tiene algún hito especial?</legend>
                     <p>
-                    <p>
-                        <input type="checkbox" name="puerto de montaña" id="puerto-de-montaña" />
+                        <input type="checkbox" name="puerto de montaña" id="puerto-de-montaña">
                         <label for="puerto-de-montaña">Puerto de montaña</label>
                     </p>
 
                     <p>
-                        <input type="checkbox" name="puerto categoría especial" id="puerto-categoria-especial" />
+                        <input type="checkbox" name="puerto categoría especial" id="puerto-categoria-especial">
                         <label for="puerto-categoria-especial">Puerto categoría especial</label>
                     </p>
 
                     <p>
-                        <input type="checkbox" name="sprint intermedio" id="sprint-intermedio" />
+                        <input type="checkbox" name="sprint intermedio" id="sprint-intermedio">
                         <label for="sprint-intermedio">Sprint intermedio</label>
                     </p>
 
                     <p>
-                        <input type="checkbox" name="sprint bonificado" id="sprint-bonificado" />
+                        <input type="checkbox" name="sprint bonificado" id="sprint-bonificado">
                         <label for="sprint-bonificado">Sprint bonificado</label>
                     </p>
 
                     <p>
-                        <input type="checkbox" name="sin hitos" id="sin-hitos" />
+                        <input type="checkbox" name="sin hitos" id="sin-hitos">
                         <label for="sin-hitos">Sin hitos</label>
                     </p>
-                    </p>
                 </fieldset>
+
                 <p>
                     <label for="pregunta6">Cual es la dificultad de la etapa (1-10)?</label>
-                    <input type="range" min="1" max="10" value="2" id="pregunta6" name="dificultad" />
+                    <input type="range" min="1" max="10" value="2" id="pregunta6" name="dificultad">
                 </p>
                 <p>
                     <label for="pregunta7">Cual es la longitud de la etapa (km)?</label>
@@ -162,9 +156,9 @@
                 </p>
                 <p>
                     <label for="pregunta10">Escribe tu nombre:</label>
-                    <input type="text" name="pregunta10" id="pregunta10" placeholder="Escribe tu nombre aquí" required />
+                    <input type="text" name="pregunta10" id="pregunta10" placeholder="Escribe tu nombre aquí" required>
                 </p>
-                <button type="submit" value="Enviar respuestas">Enviar respuestas</button>
+                <button type="submit">Enviar respuestas</button>
             </fieldset>
         </form>
     </main>
