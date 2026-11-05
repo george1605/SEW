@@ -128,3 +128,16 @@ section ul li:nth-child(3) {
 section ul li:nth-child(4) {
     font-weight: bold;
 }
+
+#inserted-section {
+    display: block;
+}
+
+#inserted-section ul {
+    list-style-type: disc;
+}
+
+#inserted-section ul li:first-child {
+    font-weight: normal;
+    font-size: 1em;
+}
