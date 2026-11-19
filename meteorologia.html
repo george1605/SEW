@@ -16,12 +16,14 @@
     <link rel="stylesheet" type="text/css" href="estilo/layout.css">
     <link rel="icon" type="image/png" href="multimedia/favicon.png">
     <script src="js/ciudad.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
    <!-- contenido de meteorología.html  -->
    <header>
     <h1><a href="index.html">LaVuelta2026</a></h1>
+    <button id="nav-button" aria-expanded="false" aria-label="Abrir menú de navegación" type="button">☰</button>
     <nav>
         <a href="index.html" title="Página principal">Inicio</a>
         <a href="ciclista.html" title="Información sobre los ciclistas">Ciclista</a>
@@ -33,7 +35,13 @@
         <a href="ayuda.html" title="Sección de ayuda">Ayuda</a>
     </nav>
    </header>
-   <nav aria-label=”migas”>
+   <search aria-label="Buscador">
+        <label for="busqueda">
+            <img src="multimedia/buscador.png" alt="icono lupa" width="16" height="16">
+        </label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar…">
+    </search>
+   <nav aria-label="migas">
     <ol>
         <li><a href="index.html">Inicio</a></li>
         <li> Meteorología </li>

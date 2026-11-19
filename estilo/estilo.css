@@ -12,13 +12,15 @@
 
 /* Gama cromática
 Color principal: #684B41
-  - Contraste de 7.04:1 con color secundario (AAA)[cite: 22]
-  - Contraste de 7.86:1 con color blanco (AAA)[cite: 22]
+  - Contraste de 7.04:1 con color secundario (AAA)
+  - Contraste de 7.86:1 con color blanco (AAA)
 Color secundario: #F9F0F5
-  - Contraste de 7.04:1 con color principal (AAA)[cite: 22]
-  - Contraste de 12.16:1 con color negro (AAA)[cite: 22]
-Color blanco: #FFFFFF[cite: 22]
-Color negro: #000000[cite: 22]
+  - Contraste de 7.04:1 con color principal (AAA)
+  - Contraste de 12.16:1 con color negro (AAA)
+Color blanco: #FFFFFF
+Color negro: #000000
+Color de selección/resaltado: #F6FF4D
+  - Contraste con color negro (texto de <mark>) muy superior a 7:1 (AAA)
 */
 
 /* Especificidad: 1 */
@@ -31,16 +33,27 @@ Color negro: #000000[cite: 22]
 }
 
 /* Especificidad: 1 */
+/* Grid de disposición: cabecera, buscador, migas, contenido y pie */
 body {
     font-family: Arial, Tahoma, sans-serif;
     background-color: var(--color-blanco);
     color: var(--color-negro);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecera"
+        "buscador"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto auto 1fr auto;
 }
 
 /* Especificidad: 1 */
 header {
+    grid-area: cabecera;
     background-color: var(--color-principal);
     color: var(--color-blanco);
     padding: 1rem;
@@ -65,12 +78,43 @@ header nav a:hover {
 }
 
 /* Especificidad: 1 */
+/* Buscador: ocupa el área "buscador", alineado a la derecha */
+search {
+    grid-area: buscador;
+    justify-self: end;
+    padding: 0.3em 0.6em;
+    margin: 0.5em 1em;
+    border: 2px solid var(--color-principal);
+}
+
+search label img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="search"] {
+    border: none;
+}
+
+mark {
+    background-color: var(--color-select);
+    color: var(--color-negro);
+}
+
+/* Migas de pan */
+body > nav {
+    grid-area: migas;
+}
+
+/* Especificidad: 1 */
 main {
+    grid-area: contenido;
     padding: 20px;
 }
 
 /* Especificidad: 1 */
 footer {
+    grid-area: pie;
     background-color: var(--color-principal);
     color: var(--color-blanco);
     text-align: center;
@@ -140,4 +184,31 @@ section ul li:nth-child(4) {
 #inserted-section ul li:first-child {
     font-weight: normal;
     font-size: 1em;
+}
+
+header > button {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    header > button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header > button {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    header > nav:not(.abierto) {
+        display: none;
+    }
+
+    header > nav.abierto {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
 }
