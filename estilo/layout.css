@@ -215,4 +215,8 @@ section:has(article) > h3 {
     table, th, td {
         font-size: 0.9rem;
     }
+
+    article h2 + img {
+        width: 80%;
+    }
 }

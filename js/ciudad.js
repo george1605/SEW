@@ -38,6 +38,36 @@ class Ciudad {
                               ", altitud " + this.coordenadas.altitud + " m";
         seccion.appendChild(parrafo);
     }
+
+    getMeteorlogia() {
+        this.apikey = 'fbdb80b264168ad596d1f319e173b7a3';
+        this.tipo = "&mode=xml";
+        this.unidades = "&units=metric";
+        this.idioma = "&lang=es";
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.nombre + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
+
+        $.ajax({
+            dataType: "xml",
+            url: this.url,
+            method: 'GET',
+            success: function (datos) {
+                var temperatura = $('temperature', datos).attr("value");
+                var temperaturaMin = $('temperature', datos).attr("min");
+                var temperaturaMax = $('temperature', datos).attr("max");
+                var temperaturaUnit = $('temperature', datos).attr("unit");
+                var humedad = $('humidity', datos).attr("value");
+
+                var stringDatos = "<ul><li>Número de elementos del XML: " + totalNodos + "</li>";
+                stringDatos += "<li>Temperatura: " + temperatura + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura mínima: " + temperaturaMin + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura máxima: " + temperaturaMax + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura (unidades): " + temperaturaUnit + "</li>";
+                stringDatos += "<li>Humedad: " + humedad + "</li>"; 
+
+                $("p").html(stringDatos).appendTo("#meteorologia");
+            }
+        })
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -58,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     section.insertAdjacentHTML("beforeend", ciudad.getInformacionSecundaria());
 
-    main.appendChild(section);
     ciudad.escribeCoordenadas(section);
+    ciudad.getMeteorlogia();
+    main.appendChild(section);
 });
